@@ -1,0 +1,8 @@
+{
+  "name": "js-crawler-for-news",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/Martin12345677/JSCrawlerForNews",
+  "author": "martin <Martin12345677>",
+  "license": "MIT"
+}
