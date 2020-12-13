@@ -1,0 +1,7 @@
+dist
+bundle.js
+test
+scripts
+jest.config.js
+babel.config.js
+.eslintrc.js

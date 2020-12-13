@@ -1,8 +1,19 @@
 {
   "name": "js-crawler-for-news",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "index.js",
   "repository": "https://github.com/Martin12345677/JSCrawlerForNews",
   "author": "martin <Martin12345677>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon -e ts,tsx --exec ts-node --files ./src/index.ts"
+  },
+  "dependencies": {
+    "@types/crawler": "^1.2.0",
+    "crawler": "^1.3.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
 }
