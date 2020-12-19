@@ -1,8 +1,3 @@
-import Crawler from "crawler";
-import { crawlPeopleBbsCover } from "./crawl-people-bbs-cover";
+import { crawlPeopleBbsPage } from "./crawl-people-bbs";
 
-const crawler = new Crawler({
-  maxConnections: 10,
-});
-
-crawlPeopleBbsCover(crawler);
+crawlPeopleBbsPage();
