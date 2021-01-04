@@ -17,10 +17,10 @@ class Mysql {
     const keys = Object.keys(content);
     const values = keys.map(key => content[key]);
     const tpt = keys.map(() => '?').join(',');
-    const sql = format(`insert into ?(${tpt}) values(tpt)`, [table, ...keys, ...values]);
-    this.sql.query(sql, (err, result) => {
-      console.log(result);
-    });
+    const sql = format(`insert into ${table} (${keys.join(',')}) values (${tpt})`, values);
+    // this.sql.query(sql, (err, result) => {
+    //   console.log(result || err);
+    // });
   }
 
   public close() {

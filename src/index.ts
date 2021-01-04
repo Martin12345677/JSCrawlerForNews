@@ -1,3 +1,3 @@
-import { crawlPeopleBbsPage } from "./crawl-people-bbs";
+import { crawlPeopleLbzPage, crawlPeopleLbzCover } from "./crawl-people-lbz";
 
-crawlPeopleBbsPage();
+crawlPeopleLbzPage();
