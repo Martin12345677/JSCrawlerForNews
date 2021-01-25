@@ -1,3 +1,6 @@
-import { crawlPeopleLbzPage, crawlPeopleLbzCover } from "./crawl-people-lbz";
+// import { crawlPeopleLbzPage, crawlPeopleLbzCover } from "./crawl-people-lbz";
+import { crawlPeopleNewsPage, crawlPeopleNewsCover } from './crawl-people-wbnews';
 
-crawlPeopleLbzPage();
+// crawlPeopleNewsPage();
+
+crawlPeopleNewsPage();

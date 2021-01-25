@@ -18,9 +18,24 @@ class Mysql {
     const values = keys.map(key => content[key]);
     const tpt = keys.map(() => '?').join(',');
     const sql = format(`insert into ${table} (${keys.join(',')}) values (${tpt})`, values);
-    // this.sql.query(sql, (err, result) => {
-    //   console.log(result || err);
-    // });
+    this.sql.query(sql, (err, result) => {
+      if (err) {
+        console.log(err.sqlMessage);
+      }
+    });
+  }
+
+  public async getAll(table: string) {
+    const sql = `SELECT * FROM ${table}`;
+    return await new Promise((res) => {
+      this.sql.query(sql, (err, result) => {
+        if (err) {
+          console.log(err.sqlMessage);
+        } else {
+          res(result);
+        }
+      });
+    });
   }
 
   public close() {
